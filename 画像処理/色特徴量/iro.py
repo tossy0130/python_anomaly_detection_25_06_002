@@ -18,7 +18,7 @@ plt.imshow(cv2.cvtColor(img1, cv2.COLOR_BGR2RGB))
 plt.imshow(cv2.cvtColor(img2, cv2.COLOR_BGR2RGB))
 
 #######################
-######### 特徴量 関数
+######### 色 特徴量 関数
 ########################
 def analyze_rgb(image):
   image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -49,7 +49,7 @@ analysis_img1 = analyze_rgb(img1)
 analysis_img2 = analyze_rgb(img2)
 
 ###########################
-######### 特徴量の可視化 ※グラフで値表示
+######### 色 特徴量の可視化 ※グラフで値表示
 ###########################
 fig, axes = plt.subplots(1, 3, figsize=(15, 5))
 
